@@ -1,0 +1,18 @@
+number_of_barrel
+barrel1_pos_x barrel1_pos_y
+...
+
+number of wall 
+wall1_pos_x wall1_pos_y 
+...
+
+number of flamethrower man
+pos1_x pos1_y
+...
+
+number of gunner 
+gunner1_x gunner1_y
+...
+
+
+main_player_pos_x main_player_pos_y

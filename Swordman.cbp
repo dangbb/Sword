@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Swordman" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Swordman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Swordman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add directory="C:/mingw_dev_lib/include/SDL2" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:/mingw_dev_liv/bin" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf" />
+			<Add directory="C:/mingw_dev_lib/lib" />
+		</Linker>
+		<Unit filename="Game.cpp" />
+		<Unit filename="Game.h" />
+		<Unit filename="GameGUI" />
+		<Unit filename="TODO" />
+		<Unit filename="header/GameAnimate.cpp" />
+		<Unit filename="header/GameAnimate.h" />
+		<Unit filename="header/GameEntity.cpp" />
+		<Unit filename="header/GameEntity.h" />
+		<Unit filename="header/GameGUI.cpp" />
+		<Unit filename="header/GameGUI.h" />
+		<Unit filename="header/GameOptions.cpp" />
+		<Unit filename="header/GameOptions.h" />
+		<Unit filename="header/GamePhysics.cpp" />
+		<Unit filename="header/GamePhysics.h" />
+		<Unit filename="header/GamePlayer.cpp" />
+		<Unit filename="header/GamePlayer.h" />
+		<Unit filename="header/GameScreen.cpp" />
+		<Unit filename="header/GameScreen.h" />
+		<Unit filename="header/GameSprite.cpp" />
+		<Unit filename="header/GameSprite.h" />
+		<Unit filename="header/GameTexture.cpp" />
+		<Unit filename="header/GameTexture.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

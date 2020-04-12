@@ -1,0 +1,10 @@
+image/firer.png
+image/maskman.png
+image/player.png 
+image/flamethrow.png 
+image/bullet.png 
+image/hit.png 
+image/barrel.png
+image/wall.png 
+image/fire_status.png 
+image/health.png

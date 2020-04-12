@@ -1,0 +1,18 @@
+COMMAND.push_back("NEW GAME");
+        COMMAND.push_back("QUIT");
+
+        PAUSE.push_back("CONTINUE");
+        PAUSE.push_back("MENU");
+        PAUSE.push_back("QUIT");
+
+        WIN.push_back("!!! YOU WIN !!!");
+        WIN.push_back("TRY AGAIN");
+        WIN.push_back("MENU");
+        WIN.push_back("QUIT");
+
+        string level_name;
+        while(read >> level_name)
+        {
+            LEVEL.push_back(level_name);
+        }
+        LEVEL.push_back("BACK");

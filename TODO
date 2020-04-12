@@ -1,0 +1,16 @@
+some class take width as radian (r), not width / 2
+
+a lot of render function where the angle is in radian
+
+think about a better dead animation
+
+collision should be check in GameScreen
+bool Seen(const int& pos_x, const int& pos_y, const int& r) const;
+
+clean up after running
+
+the moving policy is not good enough, key up not realy set
+
+GAMEGUI, CENTER OF THE OPTION LIST
+
+
