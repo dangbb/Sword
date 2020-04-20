@@ -109,6 +109,12 @@ GameEntity::GameEntity(SPRITE_SHEET_NAME texture_id, const int& init_pos_x, cons
 
 GameEntity::~GameEntity()
 {
+    this->GetPre()->SetNext(this->GetNext());
+    if(this->GetNext() != NULL)
+    {
+        this->GetNext()->SetPre(this->GetPre());
+    }
+
     delete animation;
     delete physic;
 }
@@ -122,11 +128,6 @@ void GameEntity::Update(const Uint32& GameTime)
     }
     if(this->ExpireTime < GameTime)
     {
-        this->pre->SetNext(this->next);
-        if(!(this->next == NULL))
-        {
-            this->next->SetPre(this->pre);
-        }
         delete this;
         return;
     }
@@ -183,11 +184,6 @@ bool GameEntity::Collision(const SDL_Rect& HitBox, const int& properties)
 
         if(this->id == GUN_BULLET)
         {
-            this->pre->SetNext(this->next);
-            if(!(this->next == NULL))
-            {
-                this->next->SetPre(this->pre);
-            }
             delete this;
         }
 
