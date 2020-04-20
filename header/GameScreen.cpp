@@ -89,6 +89,15 @@ GameScreen::~GameScreen()
 
     Enemy.clear();
     Obstacle.clear();
+
+    while(GameEntity::bullet->GetNext() != NULL)
+    {
+        delete GameEntity::bullet->GetNext();
+    }
+    while(GameEntity::flame->GetNext() != NULL)
+    {
+        delete GameEntity::flame->GetNext();
+    }
 }
 
 void GameScreen::Event(const Uint32& GameTime, SDL_Event e)
