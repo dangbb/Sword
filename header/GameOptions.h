@@ -14,9 +14,19 @@
 #define FPS 60
 #define ESL 1e-6
 #define bullet_speed 1000
-#define game_name "Let's cut"
+#define game_name "SwordmanX"
 
 using namespace std;
+
+typedef enum
+{
+    SE_WIN = 0,
+    SE_FAIL,
+    SE_CUT,
+    SE_GUNSHOT,
+    SE_FLAMESHOT,
+    TOTAL
+} SOUND_EFFECT;
 
 typedef enum
 {

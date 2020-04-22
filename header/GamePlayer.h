@@ -6,6 +6,8 @@
 #include "GameAnimate.h"
 #include "GameSprite.h"
 #include "GameEntity.h"
+#include "GameSound.h"
+#include "GameGUI.h"
 
 class GamePlayer
 {
@@ -23,6 +25,7 @@ class GamePlayer
         void GetRadian(int &r) const;
         void GetDame(const Uint32& GameTime, const int& id, const int& properties);
         void GetProperties(int& properties) const;
+        void SetChannel(int new_channel);
 
         bool Collision(const GameSprite* const e);
         bool IsAttack(double& angle);
@@ -39,8 +42,11 @@ class GamePlayer
         GameAnimation* reload_animation;
         GameAnimation* delay_fire_animation;
 
+        int channel_id;
         int id;
         int properties;
+
+        vector< int > Dame;
 
         SDL_RendererFlip FLIP;
         SDL_Rect Dest;

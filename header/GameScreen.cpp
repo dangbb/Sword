@@ -43,7 +43,10 @@ GameScreen::GameScreen(SDL_Renderer* Ren, string screen_path)
             int pos_y;
             read >> pos_x >> pos_y;
 
-            Enemy.push_back(new GamePlayer(FLAME_BOT, pos_x, pos_y));
+            GamePlayer* e = new GamePlayer(FLAME_BOT, pos_x, pos_y);
+            e->SetChannel(Enemy.size() + 1);
+            Mix_Volume(Enemy.size() + 1, 10);
+            Enemy.push_back(e);
         }
     }
 
@@ -57,7 +60,9 @@ GameScreen::GameScreen(SDL_Renderer* Ren, string screen_path)
             int pos_y;
             read >> pos_x >> pos_y;
 
-            Enemy.push_back(new GamePlayer(GUN_BOT, pos_x, pos_y));
+            GamePlayer* e = new GamePlayer(GUN_BOT, pos_x, pos_y);
+            e->SetChannel(Enemy.size() + 1);
+            Enemy.push_back(e);
         }
     }
 
@@ -67,9 +72,12 @@ GameScreen::GameScreen(SDL_Renderer* Ren, string screen_path)
         read >> pos_x >> pos_y;
 
         MainPlayer = new GamePlayer(PLAYER, pos_x, pos_y);
+        MainPlayer->SetChannel(Enemy.size() + 1);
     }
 
     sort(Obstacle.begin(), Obstacle.end(), GameSprite::SortPolicy);
+
+    Mix_AllocateChannels(Enemy.size() + 2);
 
     running = true;
     read.close();
@@ -175,7 +183,7 @@ void GameScreen::Loop(const Uint32& GameTime)
             Enemy[i]->GetPos(pos_x, pos_y);
             Enemy[i]->GetRadian(width);
 
-            if(TextureManagement::Distance(pos_x, main_pos_x, pos_y, main_pos_y) <= width + hit_width)
+            if(TextureManagement::Distance(pos_x, main_pos_x, pos_y, main_pos_y) <= width + hit_width - 30)
             {
                 double enemy_angle = atan2(pos_y - main_pos_y + ESL, pos_x - main_pos_x);
                 if(lower_angle <= enemy_angle && enemy_angle <= upper_angle)

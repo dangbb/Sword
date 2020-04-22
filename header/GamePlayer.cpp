@@ -166,6 +166,8 @@ void GamePlayer::Event(const Uint32& GameTime, SDL_Event& e)
         {
             if(id == PLAYER && !attack)
             {
+                Mix_HaltChannel(this->channel_id);
+                Mix_PlayChannel(this->channel_id, SoundLib::SoundEffect[SE_CUT], 0);
                 attack = true;
                 cut_animation->SetMode(0, GameTime, 20, 0, ONEWAY);
 
@@ -546,6 +548,9 @@ void GamePlayer::BotBehaviour(const Uint32& GameTime, const double& r, const dou
                     new GameEntity(FLAME_BULLET, pos_x, pos_y, r, properties);
 
                     delay_fire_animation->SetMode(0, GameTime, 50, 0, ONEWAY);
+
+                    Mix_HaltChannel(this->channel_id);
+                    Mix_PlayChannelTimed(this->channel_id, SoundLib::SoundEffect[SE_FLAMESHOT], 0, 2000);
                 }
                 else if(this->id == GUN_BOT)
                 {
@@ -553,6 +558,9 @@ void GamePlayer::BotBehaviour(const Uint32& GameTime, const double& r, const dou
                     new GameEntity(GUN_BULLET, pos_x, pos_y, r + (rand() % 10 - rand() % 10) * PI / 180, properties);
 
                     delay_fire_animation->SetMode(0, GameTime, 50, 0, ONEWAY);
+
+                    Mix_HaltChannel(this->channel_id);
+                    Mix_PlayChannel(this->channel_id, SoundLib::SoundEffect[SE_GUNSHOT], 0);
                 }
                 if(bullet == 0)
                 {
@@ -561,6 +569,11 @@ void GamePlayer::BotBehaviour(const Uint32& GameTime, const double& r, const dou
             }
         }
     }
+}
+
+void GamePlayer::SetChannel(int new_channel)
+{
+    this->channel_id = new_channel;
 }
 
 
