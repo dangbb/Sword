@@ -7,6 +7,7 @@
 #include "header/GamePlayer.h"
 #include "header/GameEntity.h"
 #include "header/GameScreen.h"
+#include "header/GameSound.h"
 #include "header/GameGUI.h"
 
 class Game

@@ -42,6 +42,11 @@ Game::Game(string texture_path)
             printf("Unable to initialize TTF: %s\n", TTF_GetError());
             running = false;
         }
+        if(Mix_OpenAudio( 44100, MIX_DEFAULT_FORMAT, 2, 2048 ) < 0 )
+        {
+            printf("Unable to initialize MIX: %s\n", Mix_GetError());
+            running = false;
+        }
     }
 
     if(running)
@@ -52,7 +57,31 @@ Game::Game(string texture_path)
         {
             string path;
             read >> path;
-            GameTexture::Texture.push_back(TextureManagement::LoadTexture(Ren, path));
+
+            SDL_Texture* e = TextureManagement::LoadTexture(Ren, path);
+            if(e == NULL)
+            {
+                cerr << "Error: Unable to load texture from " << path << endl;
+                running = false;
+            }
+            GameTexture::Texture.push_back(e);
+        }
+
+        for(int i=0;i<TOTAL;i++)
+        {
+            string path;
+            read >> path;
+
+            Mix_Chunk* e = NULL;
+
+            e = Mix_LoadWAV(path.c_str());
+
+            if(e == NULL)
+            {
+                cerr << "Error: Unable to load sound from " << path << endl;
+                running = false;
+            }
+            SoundLib::SoundEffect.push_back(e);
         }
 
         string text_path;
@@ -93,14 +122,31 @@ Game::Game(string texture_path)
 
 Game::~Game()
 {
+    for(int i=0;i<GameTexture::Texture.size();i++)
+    {
+        SDL_DestroyTexture(GameTexture::Texture[i]);
+    }
+    GameTexture::Texture.clear();
+    for(int i=0;i<SoundLib::SoundEffect.size();i++)
+    {
+        Mix_FreeChunk(SoundLib::SoundEffect[i]);
+    }
+    SoundLib::SoundEffect.clear();
+
+    SDL_DestroyRenderer(Ren);
     SDL_DestroyWindow(Global_Window);
 
     delete Menu;
     delete SelectLevel;
     delete Fallen;
     delete Winner;
+    TTF_CloseFont(Text);
 
     if(Screen != NULL) delete Screen;
+    TTF_Quit();
+    IMG_Quit();
+    Mix_Quit();
+    SDL_Quit();
 }
 
 void Game::Run()
@@ -181,12 +227,18 @@ void Game::Run()
                 in_game = false;
                 in_win = true;
                 delete Screen;
+
+                Mix_HaltChannel(0);
+                Mix_PlayChannel(0, SoundLib::SoundEffect[SE_WIN], 0);
             }
             else if(Screen->IsLose())
             {
                 in_game = false;
                 in_false = true;
                 delete Screen;
+
+                Mix_HaltChannel(0);
+                Mix_PlayChannel(0, SoundLib::SoundEffect[SE_FAIL], 0);
             }
         }
         else if(in_win)
@@ -204,16 +256,22 @@ void Game::Run()
                     in_win = false;
                     in_game = true;
                     Screen = new GameScreen(Ren, LEVEL[current_level]);
+
+                    Mix_HaltChannel(0);
                 }
                 else if(options == 2)
                 {
                     in_win = false;
                     in_menu = true;
+
+                    Mix_HaltChannel(0);
                 }
                 else if(options == 3)
                 {
                     in_win = false;
                     running = false;
+
+                    Mix_HaltChannel(0);
                 }
             }
         }
@@ -232,16 +290,22 @@ void Game::Run()
                     in_false = false;
                     in_game = true;
                     Screen = new GameScreen(Ren, LEVEL[current_level]);
+
+                    Mix_HaltChannel(0);
                 }
                 else if(options == 2)
                 {
                     in_false = false;
                     in_menu = true;
+
+                    Mix_HaltChannel(0);
                 }
                 else if(options == 3)
                 {
                     in_false = false;
                     running = false;
+
+                    Mix_HaltChannel(0);
                 }
             }
         }

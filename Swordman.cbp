@@ -58,11 +58,14 @@
 		<Unit filename="header/GamePlayer.h" />
 		<Unit filename="header/GameScreen.cpp" />
 		<Unit filename="header/GameScreen.h" />
+		<Unit filename="header/GameSound.cpp" />
+		<Unit filename="header/GameSound.h" />
 		<Unit filename="header/GameSprite.cpp" />
 		<Unit filename="header/GameSprite.h" />
 		<Unit filename="header/GameTexture.cpp" />
 		<Unit filename="header/GameTexture.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="testing" />
 		<Extensions>
 			<code_completion />
 			<envvars />

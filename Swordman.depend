@@ -1,17 +1,18 @@
 # depslib dependency file v1.0
-1586662414 source:e:\swordman\game.cpp
+1587563218 source:e:\swordman\game.cpp
 	"Game.h"
 
-1586660413 e:\swordman\game.h
+1587548526 e:\swordman\game.h
 	"header/GameOptions.h"
 	"header/GameAnimate.h"
 	"header/GameSprite.h"
 	"header/GamePlayer.h"
 	"header/GameEntity.h"
 	"header/GameScreen.h"
+	"header/GameSound.h"
 	"header/GameGUI.h"
 
-1586618187 e:\swordman\header\gameoptions.h
+1587556445 e:\swordman\header\gameoptions.h
 	<SDL.h>
 	<SDL_image.h>
 	<SDL_ttf.h>
@@ -400,16 +401,21 @@
 	"GameOptions.h"
 	"GameTexture.h"
 
-1586339888 e:\swordman\header\gamephysics.h
+1586341216 e:\swordman\header\gametexture.h
 	"GameOptions.h"
-	"GameSprite.h"
 
-1586510825 e:\swordman\header\gameplayer.h
+1587563984 e:\swordman\header\gameplayer.h
 	"GameOptions.h"
 	"GamePhysics.h"
 	"GameAnimate.h"
 	"GameSprite.h"
 	"GameEntity.h"
+	"GameSound.h"
+	"GameGUI.h"
+
+1586339888 e:\swordman\header\gamephysics.h
+	"GameOptions.h"
+	"GameSprite.h"
 
 1586445954 e:\swordman\header\gameentity.h
 	"GameOptions.h"
@@ -417,45 +423,50 @@
 	"GameTexture.h"
 	"GamePhysics.h"
 
-1586448128 source:e:\swordman\header\gameentity.cpp
-	"GameEntity.h"
-
-1586509703 source:e:\swordman\header\gameoptions.cpp
-	"GameOptions.h"
-
-1586362991 source:e:\swordman\header\gamesprite.cpp
-	"GameSprite.h"
-
-1586661516 source:e:\swordman\main.cpp
-	"Game.h"
-
-1586341216 e:\swordman\header\gametexture.h
-	"GameOptions.h"
-
 1586659371 e:\swordman\header\gamescreen.h
 	"GameOptions.h"
 	"GamePlayer.h"
 	"GameSprite.h"
 	"GameEntity.h"
 
+1587564185 e:\swordman\header\gamegui.h
+	"GameOptions.h"
+
 1586511005 source:e:\swordman\header\gameanimate.cpp
 	"GameAnimate.h"
+
+1587393285 source:e:\swordman\header\gameentity.cpp
+	"GameEntity.h"
+
+1587564181 source:e:\swordman\header\gamegui.cpp
+	"GameGUI.h"
+
+1586509703 source:e:\swordman\header\gameoptions.cpp
+	"GameOptions.h"
 
 1586509961 source:e:\swordman\header\gamephysics.cpp
 	"GamePhysics.h"
 
+1587564164 source:e:\swordman\header\gameplayer.cpp
+	"GamePlayer.h"
+
+1587564233 source:e:\swordman\header\gamescreen.cpp
+	"GameScreen.h"
+
+1586362991 source:e:\swordman\header\gamesprite.cpp
+	"GameSprite.h"
+
 1586341219 source:e:\swordman\header\gametexture.cpp
 	"GameTexture.h"
 
-1586598633 source:e:\swordman\header\gameplayer.cpp
-	"GamePlayer.h"
+1586661516 source:e:\swordman\main.cpp
+	"Game.h"
 
-1586662369 source:e:\swordman\header\gamescreen.cpp
-	"GameScreen.h"
-
-1586662054 source:e:\swordman\header\gamegui.cpp
-	"GameGUI.h"
-
-1586622501 e:\swordman\header\gamegui.h
+1587548521 e:\swordman\header\gamesound.h
 	"GameOptions.h"
+
+1587547923 source:e:\swordman\gamesound.cpp
+
+1587555335 source:e:\swordman\header\gamesound.cpp
+	"GameSound.h"
 
