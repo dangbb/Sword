@@ -1,0 +1,472 @@
+# depslib dependency file v1.0
+1587563218 source:e:\swordman\game.cpp
+	"Game.h"
+
+1587548526 e:\swordman\game.h
+	"header/GameOptions.h"
+	"header/GameAnimate.h"
+	"header/GameSprite.h"
+	"header/GamePlayer.h"
+	"header/GameEntity.h"
+	"header/GameScreen.h"
+	"header/GameSound.h"
+	"header/GameGUI.h"
+
+1587556445 e:\swordman\header\gameoptions.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	<bits/stdc++.h>
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_assert.h"
+	"SDL_atomic.h"
+	"SDL_audio.h"
+	"SDL_clipboard.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_filesystem.h"
+	"SDL_gamecontroller.h"
+	"SDL_haptic.h"
+	"SDL_hints.h"
+	"SDL_joystick.h"
+	"SDL_loadso.h"
+	"SDL_log.h"
+	"SDL_messagebox.h"
+	"SDL_metal.h"
+	"SDL_mutex.h"
+	"SDL_power.h"
+	"SDL_render.h"
+	"SDL_rwops.h"
+	"SDL_sensor.h"
+	"SDL_shape.h"
+	"SDL_system.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_version.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<wchar.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<math.h>
+	<float.h>
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	<sal.h>
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_config.h
+	"SDL_platform.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_platform.h
+	"AvailabilityMacros.h"
+	"TargetConditionals.h"
+	<winapifamily.h>
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\begin_code.h
+
+1583890678 c:\mingw_dev_lib\include\sdl2\close_code.h
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_assert.h
+	"SDL_config.h"
+	"begin_code.h"
+	<signal.h>
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_atomic.h
+	"SDL_stdinc.h"
+	"SDL_platform.h"
+	"begin_code.h"
+	<sys/cpuinline.h>
+	<mbarrier.h>
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_atomic.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	<process.h>
+	<stdlib.h>
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_clipboard.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	<intrin.h>
+	<intrin.h>
+	<altivec.h>
+	<arm_neon.h>
+	<armintr.h>
+	<arm_neon.h>
+	<arm64intr.h>
+	<arm64_neon.h>
+	<mm3dnow.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_gamecontroller.h"
+	"SDL_quit.h"
+	"SDL_gesture.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_pixels.h
+	"SDL_stdinc.h"
+	"SDL_endian.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_rect.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_pixels.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_surface.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_blendmode.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_blendmode.h
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keycode.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_keycode.h
+	"SDL_stdinc.h"
+	"SDL_scancode.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_scancode.h
+	"SDL_stdinc.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_gamecontroller.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_gesture.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"SDL_touch.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_touch.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_filesystem.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_haptic.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_joystick.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_hints.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_log.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_messagebox.h
+	"SDL_stdinc.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_metal.h
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_power.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890677 c:\mingw_dev_lib\include\sdl2\sdl_render.h
+	"SDL_stdinc.h"
+	"SDL_rect.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_sensor.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_shape.h
+	"SDL_stdinc.h"
+	"SDL_pixels.h"
+	"SDL_rect.h"
+	"SDL_surface.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_system.h
+	"SDL_stdinc.h"
+	"SDL_keyboard.h"
+	"SDL_render.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1583890678 c:\mingw_dev_lib\include\sdl2\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1561870368 c:\mingw_dev_lib\include\sdl2\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1547322281 c:\mingw_dev_lib\include\sdl2\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1540997992 c:\mingw_dev_lib\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1586340846 e:\swordman\header\gameanimate.h
+	"GameOptions.h"
+
+1586362998 e:\swordman\header\gamesprite.h
+	"GameAnimate.h"
+	"GameOptions.h"
+	"GameTexture.h"
+
+1586341216 e:\swordman\header\gametexture.h
+	"GameOptions.h"
+
+1587563984 e:\swordman\header\gameplayer.h
+	"GameOptions.h"
+	"GamePhysics.h"
+	"GameAnimate.h"
+	"GameSprite.h"
+	"GameEntity.h"
+	"GameSound.h"
+	"GameGUI.h"
+
+1586339888 e:\swordman\header\gamephysics.h
+	"GameOptions.h"
+	"GameSprite.h"
+
+1586445954 e:\swordman\header\gameentity.h
+	"GameOptions.h"
+	"GameAnimate.h"
+	"GameTexture.h"
+	"GamePhysics.h"
+
+1586659371 e:\swordman\header\gamescreen.h
+	"GameOptions.h"
+	"GamePlayer.h"
+	"GameSprite.h"
+	"GameEntity.h"
+
+1587564185 e:\swordman\header\gamegui.h
+	"GameOptions.h"
+
+1586511005 source:e:\swordman\header\gameanimate.cpp
+	"GameAnimate.h"
+
+1587393285 source:e:\swordman\header\gameentity.cpp
+	"GameEntity.h"
+
+1587564181 source:e:\swordman\header\gamegui.cpp
+	"GameGUI.h"
+
+1586509703 source:e:\swordman\header\gameoptions.cpp
+	"GameOptions.h"
+
+1586509961 source:e:\swordman\header\gamephysics.cpp
+	"GamePhysics.h"
+
+1587564164 source:e:\swordman\header\gameplayer.cpp
+	"GamePlayer.h"
+
+1587563359 source:e:\swordman\header\gamescreen.cpp
+	"GameScreen.h"
+
+1586362991 source:e:\swordman\header\gamesprite.cpp
+	"GameSprite.h"
+
+1586341219 source:e:\swordman\header\gametexture.cpp
+	"GameTexture.h"
+
+1586661516 source:e:\swordman\main.cpp
+	"Game.h"
+
+1587548521 e:\swordman\header\gamesound.h
+	"GameOptions.h"
+
+1587547923 source:e:\swordman\gamesound.cpp
+
+1587555335 source:e:\swordman\header\gamesound.cpp
+	"GameSound.h"
+
