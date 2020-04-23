@@ -9,7 +9,16 @@ image/wall.png
 image/fire_status.png 
 image/health.png
 
+sound/0.wav
+sound/1.wav
+sound/2.wav
+sound/3.wav
+sound/4.wav
+
 ttf/Coder.ttf 
 
-level/level0.txt
-level/level1.txt
+level/level_beginner.txt
+level/level_specialist.txt
+level/level_amateur.txt
+level/level_nightmare.txt
+level/level_ultra_nightmare.txt
