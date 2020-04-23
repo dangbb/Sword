@@ -227,6 +227,8 @@ void Game::Run()
                 in_game = false;
                 in_win = true;
                 delete Screen;
+                
+                Screen = NULL;
 
                 Mix_HaltChannel(0);
                 Mix_PlayChannel(0, SoundLib::SoundEffect[SE_WIN], 0);
@@ -236,6 +238,8 @@ void Game::Run()
                 in_game = false;
                 in_false = true;
                 delete Screen;
+                
+                Screen = NULL;
 
                 Mix_HaltChannel(0);
                 Mix_PlayChannel(0, SoundLib::SoundEffect[SE_FAIL], 0);
