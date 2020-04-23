@@ -17,5 +17,8 @@ sound/4.wav
 
 ttf/Coder.ttf 
 
-level/level0.txt
-level/level1.txt
+level/level_beginner.txt
+level/level_specialist.txt
+level/level_amateur.txt
+level/level_nightmare.txt
+level/level_ultra_nightmare.txt
