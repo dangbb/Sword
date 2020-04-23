@@ -181,12 +181,14 @@ void Game::Run()
                 in_game = false;
                 in_win = true;
                 delete Screen;
+                Screen = NULL;
             }
             else if(Screen->IsLose())
             {
                 in_game = false;
                 in_false = true;
                 delete Screen;
+                Screen = NULL;
             }
         }
         else if(in_win)
